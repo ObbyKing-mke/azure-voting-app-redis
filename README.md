@@ -1,31 +1,23 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-redis-cache
-description: "This sample creates a multi-container application in an Azure Kubernetes Service (AKS) cluster."
----
+# course9-capstone-project
+This is a repo dedicated to my simplilearn capstone project
 
-# Azure Voting App
+## General plan for approaching this issue
 
-This sample creates a multi-container application in an Azure Kubernetes Service (AKS) cluster. The application interface has been built using Python / Flask. The data component is using Redis.
+1) Get Jenkins setup in a container
+2) ???
 
-To walk through a quick deployment of this application, see the AKS [quick start](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough?WT.mc_id=none-github-nepeters).
+## Links
 
-To walk through a complete experience where this code is packaged into container images, uploaded to Azure Container Registry, and then run in and AKS cluster, see the [AKS tutorials](https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app?WT.mc_id=none-github-nepeters).
+- [Creating a Jenkins VM in Azure](https://docs.microsoft.com/en-us/azure/developer/jenkins/configure-on-linux-vm)
+- [Build a containerized webapp with docker](https://docs.microsoft.com/en-us/learn/modules/intro-to-containers/)
+- [Container CI/CD using Jenkins and Kubernetes on Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/container-cicd-using-jenkins-and-kubernetes-on-azure-container-service)
+- [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
+- [Deploy from GitHub to Azure Kubernetes Service using Jenkins](https://docs.microsoft.com/en-us/azure/developer/jenkins/deploy-from-github-to-aks)
 
-## Contributing
+## Azure specific info
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+- Resource group name: my-resource-group
+    - Location: Central US
+- AKS Cluster Name: andrewLundAksCluster
+- ACR Name: andrewLundAcr
+    - ACR Login Server: andrewlundacr.azurecr.io
